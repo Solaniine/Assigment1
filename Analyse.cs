@@ -17,7 +17,7 @@ namespace CMP1903M_Assessment_1_Base_Code
         //Returns: list of integers
         //Calculates and returns an analysis of the text
 
-        // public list of ints + data abstraction because needed in the report 
+
         public List<int> AnalyseText(string input)
         {
             List<int> values = new List<int>();
@@ -27,7 +27,8 @@ namespace CMP1903M_Assessment_1_Base_Code
                 values.Add(0);
 
             }
-
+            //n holds the length of the text file
+            // i holds an interger value used later on 
             int n = input.Length;
             int i = 0;
 
@@ -81,12 +82,6 @@ namespace CMP1903M_Assessment_1_Base_Code
 
                 }
             }
-            //tells you what is given out from the report calling the AnalyseText object inside of it 
-            Console.WriteLine("num of sentences" + numberofsentences);
-            Console.WriteLine("num of vowels " + numberofvowels);
-            Console.WriteLine("num of cons "+numberofcons);
-            Console.WriteLine("num of upper"+numberofupper);
-            Console.WriteLine("num of lower"+ numberoflower);
 
             return values;
         }

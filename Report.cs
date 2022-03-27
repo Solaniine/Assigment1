@@ -8,6 +8,16 @@ namespace CMP1903M_Assessment_1_Base_Code
 {
     class Report
     {
+       
+        
+        public void outputFile(List<String> List, string file)
+        {
+            Analyse analysee = new Analyse();
+            string list = "nothing";
+            //Receive a list of integers back
+            analysee.AnalyseText(list );
+
+        }
         //Handles the reporting of the analysis
         //Maybe have different methods for different formats of output?
         //eg.   public void outputConsole(List<int>)

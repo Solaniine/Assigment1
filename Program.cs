@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace CMP1903M_Assessment_1_Base_Code
 {
     class Program
@@ -14,26 +13,40 @@ namespace CMP1903M_Assessment_1_Base_Code
             //Local list of integers to hold the first five measurements of the text
             List<int> parameters = new List<int>();
 
+
             //Create 'Input' object
             //Get either manually entered text, or text from a file
 
+            string file = "text";
+
+
+            Input input= new Input();
+            input.FileTextInput(file);
+            string textfile = input.FileTextInput(file);
+
+
 
             //Create an 'Analyse' object
-            //Pass the text input to the 'analyseText' method
-
+            Analyse analysee = new Analyse();
 
             //Receive a list of integers back
-
+            analysee.AnalyseText(textfile);
+            parameters = analysee.AnalyseText(textfile);
 
             //Report the results of the analysis
+            Input input2 = new Input();
+            Report report = new Report();
+
 
 
             //TO ADD: Get the frequency of individual letters?
 
-           
+
+
+
         }
-        
-        
-    
+
+
+
     }
 }

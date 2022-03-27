@@ -17,7 +17,7 @@ namespace CMP1903M_Assessment_1_Base_Code
         //Arguments: string (the file path)
         //Returns: string
         //Gets text input from a .txt file
-
+        //encapsulation and data abstraction 
         public string FileTextInput(string file)
         {
             try

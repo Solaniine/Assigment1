@@ -27,7 +27,8 @@ namespace CMP1903M_Assessment_1_Base_Code
                 values.Add(0);
 
             }
-
+            //n holds the length of the text file
+            // i holds an interger value used later on 
             int n = input.Length;
             int i = 0;
 
@@ -81,12 +82,15 @@ namespace CMP1903M_Assessment_1_Base_Code
 
                 }
             }
+
+=======
             //list of Console lines giving out by the for statements above
             Console.WriteLine("num of sentences" + numberofsentences);
             Console.WriteLine("num of vowels " + numberofvowels);
             Console.WriteLine("num of cons "+numberofcons);
             Console.WriteLine("num of upper"+numberofupper);
             Console.WriteLine("num of lower"+ numberoflower);
+
 
             return values;
         }

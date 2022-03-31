@@ -35,7 +35,6 @@ namespace CMP1903M_Assessment_1_Base_Code
 
             //Report the results of the analysis
             Input input2 = new Input();
-            Report report = new Report();
             Report(List<string>);
 
 
